@@ -20,7 +20,7 @@ git clone https://github.com/sujayadkesar/qr_code_generator
 cd qr_code_generator
 ```
 ```
-pip3 install requirements.txt
+python3  install_requirements.py
 ```
 ```
 python3 qrcode.py
