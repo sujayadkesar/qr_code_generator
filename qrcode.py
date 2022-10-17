@@ -48,3 +48,4 @@ display_img = cv2.imread(b)
 cv2.imshow("displayingimage", display_img)
 cv2.waitKey(0)
 print('[*] TO generate another one run it once again!')
+
