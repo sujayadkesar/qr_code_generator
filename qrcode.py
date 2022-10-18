@@ -1,8 +1,6 @@
 import os
-os.system('sudo apt install python3-pip')
-os.system('pip3 install pyqrcode')
 import pyqrcode
-
+import png
 
 
 def colored(r, g, b, text):
@@ -19,13 +17,12 @@ print(colored(0, 255, 255, "@SUJAY_ADKESAR : https://sujayadkesar.github.io/port
 print(colored(0, 255, 255, "https://github.com/sujayadkesar/qr_code_generator"))
 print("\n*******************\n")
 
-
 data_from_user = input("\n\n[*] Enter the url or text that has to be converted into QR code:-\t")
-data = "{}".format(data_from_user)
 
+name_from_user = input("\n[*] Enter the filename to save qr code image:-\t")
 
-url = pyqrcode.create(data)
-url.show()
-# print(url.terminal(quiet_zone=1))
+url = pyqrcode.create(data_from_user)
+
+url.png('{}.png'.format(name_from_user))
 
 print('[*] TO generate another one run it once again!')
