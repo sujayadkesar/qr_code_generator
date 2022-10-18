@@ -7,17 +7,17 @@ os.system('clear')
 print("[*] Installing python pip package installer . . . . . .")
 os.system('sudo apt install python3-pip')
 
-print("[*] Installing opencv . . . . . . .")
-os.system('pip3 install opencv-python')
 
 print("[*] Installing pyfiglet . . . . . .")
 os.system('pip3 install pyfiglet')
 
 print("[*] Installing qrcode . . . . .")
-os.system('pip3 install qrcode')
+os.system('pip3 install qrcode==6.1')
+os.system('pip3 install pyqrcode')
 os.system('clear')
 
 os.system('sudo apt install toilet -y')
+os.system('pip3 install pypng')
 os.system('clear')
 
 
