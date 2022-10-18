@@ -20,8 +20,8 @@ git clone https://github.com/sujayadkesar/qr_code_generator
 cd qr_code_generator
 ```
 ```
-```
 python3 installer.py
+```
 ```
 python3 qrcode.py
 ```
