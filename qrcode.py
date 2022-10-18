@@ -1,6 +1,7 @@
 import os
 import pyqrcode
 import png
+from PIL import Image 
 
 
 def colored(r, g, b, text):
@@ -24,5 +25,9 @@ name_from_user = input("\n[*] Enter the filename to save qr code image:-\t")
 url = pyqrcode.create(data_from_user)
 
 url.png('{}.png'.format(name_from_user))
+
+display = Image.open("{}.png".format(name_from_user))
+display.show()
+
 
 print('[*] TO generate another one run it once again!')
