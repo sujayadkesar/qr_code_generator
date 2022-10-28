@@ -27,9 +27,12 @@ python3 qrcode.py
 ```
 
 > **Note** : To access this tool from any directory  
-> ```
-> sudo mv qrcode.py /usr/share/qrcode
->  ```
+ ```
+ chmod +x qrcode.py
+  ```
+```
+cp qrcode.py /bin/qrcode
+```
 
 ### Licensing
 
